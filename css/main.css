@@ -1,0 +1,784 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 2.5vh;
+	list-style: none;
+	line-height: 2;
+}
+
+h1 {
+	font-size: 4vh;
+}
+
+h2 {
+	font-size: 3.8vh;
+}
+
+h3 {
+	font-size: 3.4vh;
+}
+
+h4 {
+	font-size: 3vh;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(154,19,23,1);
+}
+
+
+
+.btn {
+	padding: 2vh 3vh;
+	border-radius: 1vh;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(154,19,23,1);
+	box-shadow: 0px 5px 10px 0px #333;
+	display: block;
+}
+
+
+
+@font-face {
+    font-family: "Copperplate";
+    src: url("../fonts/Copperplate/OPTICopperplate.otf");
+}
+/* font-family: "Copperplate", serif; */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+/* font-family: "Roboto", sans-serif; */
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+	height: 100%;
+	max-width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+.site-header {
+	position: fixed;
+	padding: 1vh;
+	height: 10vh;
+	width: 100%;
+	top: 0;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px black;
+	border-bottom: 0.4vh solid rgba(154,19,23,1);
+	z-index: 1000;
+}
+
+.admin-bar .site-header {
+	top: 32px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.site-branding {
+	height: 100%;
+}
+
+.custom-logo {
+	height: 100%;
+	width: auto;
+}
+
+.site-title {
+	display: none;
+}
+
+#primary-menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#primary-menu .menu-item {
+	margin: 1vh;
+}
+
+#primary-menu .menu-item a {
+	display: block;
+	padding: 2vh;
+	color: black;
+	text-decoration: none;
+	font-family: "Copperplate", serif;
+	font-size: 2vh;
+}
+
+#primary-menu .current-menu-item a {
+	color: rgba(154,19,23,1);
+}
+
+.site-content {
+	min-height: 90vh;
+	margin-top: 10vh;
+}
+
+.section {
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2vh;
+	position: relative;
+}
+
+.section .overlay {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+	top: 0;
+	z-index: 0;
+	background: rgba(51,51,51,.2);
+}
+
+.section .content {
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 5vh 0;
+}
+
+.section .message {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro {
+	background-image: url("../images/intro-pizza-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro .overlay {
+	background: rgba(51,51,51,.2);
+}
+
+.intro .content {
+	font-family: "Copperplate", serif;
+}
+
+.intro .message {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.intro .message .title {
+	font-size: 8vh;
+	padding: 3vh;
+	background-color: rgba(154,19,23,0.8);
+	border-radius: 2vh;
+	text-align: center;
+	text-shadow: 0px 0px 10px #333;
+}
+
+.intro .message div {
+	font-size: 3vh;
+	padding: 3vh;
+	padding-top: 1vh;
+	background-color: rgba(154,19,23,0.8);
+	border-radius: 0 0 2vh 2vh;
+	text-shadow: 0px 0px 10px #333;
+}
+
+#menu-cta-link-prima-sezione a {
+	padding: 2vh 3vh;
+	border-radius: 1vh;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(154,19,23,1);
+	box-shadow: 0px 5px 10px 0px #333;
+	font-family: "Copperplate", serif;
+	display: block;
+	margin: 5vh 0;
+}
+
+.second {
+	min-height: 90vh;
+	border-top: 4vh solid #9a1317;
+    border-bottom: 4vh solid #9a1317;
+}
+
+
+.second .title {
+	font-family: "Copperplate", serif;
+	color: rgba(154,19,23,1);
+	font-size: 6vh;
+	margin: 5vh 0;
+}
+
+.second .textwidget {
+	padding: 2vh;
+	text-align: center;
+	font-size: 4vh;
+	line-height: 2;
+}
+
+#menu-cta-link-seconda-sezione a {
+	padding: 2vh 3vh;
+	border-radius: 1vh;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(154,19,23,1);
+	box-shadow: 0px 5px 10px 0px #333;
+	font-family: "Copperplate", serif;
+	display: block;
+	margin: 5vh 0;
+}
+
+.third {
+	min-height: 90vh;
+	background-image: url("../images/castellammare-del-golfo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.third .overlay {
+	background: rgba(51,51,51,.6);
+}
+
+.third .title {
+	font-family: "Copperplate", serif;
+	color: #fff;
+	font-size: 6vh;
+	text-shadow: 0 0 1vh #000;
+	margin: 5vh 0;
+}
+
+.third .textwidget {
+	padding: 2vh;
+	color: #fff;
+	text-align: center;
+	font-size: 4vh;
+	text-shadow: 0 0 1vh #000;
+	line-height: 2;
+}
+
+#menu-cta-link-terza-sezione a {
+	padding: 2vh 3vh;
+	border-radius: 1vh;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(154,19,23,1);
+	box-shadow: 0px 5px 10px 0px #333;
+	font-family: "Copperplate", serif;
+	display: block;
+	margin: 5vh 0;
+}
+
+.hentry {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	padding: 2vh 1vh;
+}
+
+.page .entry-header {
+	position: relative;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2vh;
+	overflow: hidden;
+}
+
+.page .entry-header .entry-title {
+	z-index: 3;
+	position: relative;
+	font-family: "Copperplate", serif;
+	color: #fff;
+	padding: 2vh;
+	text-align: center;
+	font-size: 6vh;
+}
+
+.page .entry-header img {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+	top: 0;
+	z-index: 1;
+}
+
+.page .entry-header .overlay {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+	top: 0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.entry-content {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 2vh;
+	background-color: #efefef;
+	padding: 3vh;
+	border-radius: 2vh;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+	font-family: "Copperplate", serif;
+	color: rgba(154,19,23,1);
+}
+
+
+.entry-content p {
+	margin: 4vh 0;
+}
+
+.entry-content .main-entry-content {
+	flex: 3;
+}
+
+.entry-content .sidebar-entry-content {
+	flex: 1;
+}
+
+
+.page-template-page-pizze .main-content {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 2vh;
+}
+
+.page-template-page-pizze .content-area {
+	flex: 3;
+}
+
+.page-template-page-pizze .widget-area {
+	flex: 1;
+}
+
+.page-template-page-pizze .entry-content {
+	background-color: unset;
+}
+
+.list-pizza .pizza-main {
+	min-height: 30vh;
+	display: flex;
+	background-color: #efefef;
+	border-radius: 2vh;
+	overflow: hidden;
+	padding: 2vh;
+	margin-bottom: 2vh;
+}
+
+.list-pizza .pizza-main .pizza-image {
+	flex: 1;
+	border-radius: 2vh;
+	overflow: hidden;
+}
+
+.list-pizza .pizza-main .pizza-image img {
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+
+}
+
+.list-pizza .pizza-main .pizza-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.list-pizza .pizza-main .pizza-content .pizza-title {
+	color: rgba(154,19,23,1);
+	font-family: "Copperplate", serif;
+}
+
+.list-pizza .pizza-main .pizza-content .pizza-ingredients {
+	text-align: center;
+}
+
+.list-pizza .pizza-main .pizza-content .pizza-price {
+	background-color: rgba(154,19,23,1);
+	color: white;
+	padding: 1.5vh;
+	border-radius: 1vh;
+}
+
+.sidebar-entry-content {
+	margin-left: 2vh;
+	position: sticky;
+	top: 14vh;
+}
+
+.widget-area {
+	background-color: #efefef;
+	border-radius: 2vh;
+}
+
+.widget {
+	padding: 2vh;
+}
+
+.sidebar-entry-content .widget .widget-title{
+	font-family: "Copperplate", serif;
+	font-size: 2.5vh;
+	text-align: center;
+}
+
+.footer-widget-area {
+	background-color: rgba(154,19,23,1);
+}
+.footer-widget-inside {
+	display: flex;
+	padding: 2vh 1vh;
+}
+
+.footer-widget-inside * {
+	color: #fff;
+}
+
+.footer-widget {
+	padding: 1vh;
+	flex: 1;
+}
+
+.footer-widget .widget-title {
+	border-bottom: 0.5vh solid white;
+	margin-bottom: 2vh;
+	padding-bottom: 1vh;
+	font-family: "Copperplate", serif;
+	font-size: 2.5vh;
+}
+
+.site-footer {
+	background-color: #333;
+	min-height: 10vh;
+	padding: 2vh;
+}
+
+.site-footer * {
+	color: #fff;
+}
+
+.site-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.copyright {
+	text-align: center;
+}
+.policy-menu {
+	margin-top: 0.3vh;
+}
+
+#menu-policy-menu {
+	display: flex;
+}
+
+#menu-policy-menu .menu-item {
+	margin: 0 0.5vh;
+	text-align: center;
+}
+.dev-credits {
+	margin-top: 1vh;
+}
+
+.dev-credits a {
+	font-size: 2vh;
+}
+
+
+#contactPageMap {
+	height: 50vh;
+	width: 100%;
+}
+
+#footerMap {
+	height: 40vh;
+	width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	* {
+		font-size: 3vh;
+	}
+	.container {
+		height: 100%;
+		max-width: 100%;
+		margin: auto;
+	}
+	.admin-bar .site-header {
+		top: 46px;
+	}
+
+	#wpadminbar {
+		position: fixed;
+		top: 0;
+	}
+
+	#primary-menu .menu-item a {
+		font-size: 2.5vh;
+	}
+
+	.page .entry-header {
+		height: 20vh;
+	}
+
+	.site-header {
+		padding: 0;
+	}
+
+	.site-branding,
+	.burger {
+		padding: 1vh;
+	}
+
+	.page .entry-header .entry-title {
+		font-size: 5vh;
+	}
+	.entry-content {
+		display: block;
+	}
+
+	.intro {
+		background-image: url("../images/intro-pizza-mobile.jpg");
+	}
+
+	.intro .message .title {
+		font-size: 6vh;
+		padding: 2.5vh;
+	}
+	
+	.intro .message .text {
+		font-size: 3vh;
+		padding: 2.5vh;
+	}
+
+	.third {
+		background-image: url("../images/castellammare-del-golfo-mobile.jpg");
+	}
+	
+
+	.list-pizza .pizza-main {
+		min-height: 50vh;
+		display: block;
+	
+	}
+	
+	.list-pizza .pizza-main .pizza-image {
+		height: 50%;
+	}
+	
+	.list-pizza .pizza-main .pizza-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;	
+	}
+	
+	.list-pizza .pizza-main .pizza-content {
+		min-height: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	
+	}
+
+	.list-pizza .pizza-main .pizza-content .pizza-ingredients {
+		font-size: 3vh;
+		text-align: center;
+	}
+
+	.sidebar-entry-content {
+		margin-left: 0;
+	}
+	.footer-widget-inside {
+		display: block;
+	}
+
+	.footer-widget {
+		margin: 2vh 0;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive nav */
+
+.burger {
+	display: none;
+}
+
+.burger div {
+	width: 5vh;
+	height: 0.5vh;
+	margin: 1vh;
+	border-radius: 1vh;
+	background-color: #000;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+	.burger {
+        display: block;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+	.main-navigation {
+		position: absolute;
+		right: 0;
+		top: 10vh;
+		height: 90vh;
+		width: 80%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+	}
+	.menu-primary-menu-container {
+		height: 100%;
+	}
+
+	#primary-menu {
+		background-color: #fff;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	#primary-menu .menu-item {
+		opacity: 0;
+	}
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-1vh, 1.1vh);
+}
+.toggle .line2 {
+    opacity: 0;
+
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-1vh, -1.1vh);
+
+}
+
+
+
+.wp-block-column {
+	margin: 0 !important;
+	flex-basis: 100%;
+	padding: 1vh;
+}
+
+.wp-block-image {
+	margin: 0;
+}
+
+
+.wp-block-image img {
+	width: 100%;
+	height: 40vh;
+	object-fit: cover;
+	border-radius: 2vh;
+}
+
+
+input,
+textarea {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #ccc;
+	font-family: "Roboto", sans-serif;
+	border-radius: 1vh;
+	padding: 1vh;
+	background-color: #fafafa;
+}
+
+input[type=submit] {
+	padding: 1vh 3vh;
+	border-radius: 1vh;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(154,19,23,1);
+	box-shadow: 0px 5px 10px 0px #333;
+	display: block;
+	width: auto;
+	text-align: center;
+	border: 0;
+	margin: auto;
+	cursor: pointer;
+	box-shadow: 0px 5px 10px 0px #333;
+}
+
+input:focus,
+textarea:focus {
+	outline: 0;
+	background-color: #fff;
+}
+
